@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portfolio for Tommy Jiang</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio for Tommy Jiang">
+    <meta name="author" content="Portfolio for Tommy Jiang">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+    
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
+    <!-- github activity css -->    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="assets/plugins/github-activity/github-activity-0.1.5.min.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    
+</head> 
+
+<body>
+    <!-- ******HEADER****** --> 
+    <header class="header">
+        <div class="container clearfix">                       
+            <img class="profile-image img-fluid float-left rounded-circle" src="assets/images/profile.png" alt="profile image" />
+            <div class="profile-content float-left">
+                <h1 class="name">Tommy Jiang</h1>
+                <h2 class="desc">MS Analytics Student at Georgia Tech</h2>   
+                <ul class="social list-inline">
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/tommyjiang01/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="list-inline-item"><a href="https://github.com/TommyJiang91" target="_blank"><i class="fab fa-github"></i> </a></li>
+
+                </ul> 
+            </div><!--//profile-->            
+        </div><!--//container-->
+    </header><!--//header-->
+    
+
+
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-lg-8 col-12">
+
+                <section class="projects section">
+                    <p><img src="assets/images/projects/project-2.png" style="width:880px;height:380px;"/></p>            
+                </section><!--//section-->
+
+                <section class="skills aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h5>1. Introduction</h5>
+                            <p>The risk of online recruitment fraud arises as companies are highly dependent on online and automated systems in the hiring processes. Such fraud not only negatively impact job seekers, but also causes harm to the reputation of the hiring organizations. </p>
+
+                            <p>Our motivation is to build an effective classification model to identify fake job postings to prevent any potential risk of the frauds. For this project, we used advanced word embedding techniques and neural network models and bring in additional predictors to identify fake job postings more effectively. </p>
+
+                        <h5>2. Data</h5>
+
+                            <p>Our project uses the “Real or Fake: Fake Job Description Prediction” dataset from Kaggle, which contains 18 thousand job descriptions across 18 features with disk size of 50.1 MB. The data is imbalanced with only 866 fake postings. Below is the word cloud of the fake job postings from the dataset.</p>
+
+                        <p>Word cloud for fake postings:</p>
+                        <p><img src="assets/images/projects/Job_Scam_Detection/Word_Cloud.png" style="width:600px;height:360px;"/></p>
+
+                        <h5>3. Project Highlights</h5>
+                            <ul>
+                                <li>
+                                    <p>Improved the F1 score for both logistic regression and random forecast model by adding the extra Salary feature engineered using dataset from United States National Occupational Employment and Wage Estimates.</p>
+                                </li>
+                                <li>
+                                    <p>Experimented different embedding methods on text columns, among which the Count Vectorizer has the best performance for simpler models (both logistic regression and random forecast model). </p>
+                                </li>
+                                <li>
+                                    <p>Implemented neural network model with Count Vectorizer embedding and LSTM (long short term memory network) with Keras embedding for the classification task. The model structure and test result for both methods are shown below.</p>
+                                </li>
+                                <p>Neural Network Structures:</p>
+                                <p><img src="assets/images/projects/Job_Scam_Detection/NN.png" style="width:720px;height:420px;"/></p>
+                                <p>Neural Network with LSTM Structure</p>
+                                <p><img src="assets/images/projects/Job_Scam_Detection/NN_LSTM.png" style="width:720px;height:420px;"/></p>
+                                <li>
+                                    <p>Implemented Neutral network model with Elmo embedding.</p>
+                                </li>
+                            </ul>
+                       
+                        <h5>4. Findings</h5>
+                            <ul>
+                                <li>
+                                    <p>In our dataset, the Count Vectorizer outperformed Tokenizer, which indicates that <strong>fake job postings use similar words, but the wording and paraphrasing of the content has little explanation power of whether the job posting is fake or real.</strong></p>
+                                </li>
+                                <li>
+                                    <p>Neural network model has better performance than regular models such as random forest model with F1 score of 0.79 vs 0.65.</p>
+                                </li>
+                            </ul>
+
+                        <h5>5. Future Projects</h5>
+                            <ul>
+                                <li>
+                                    <p>The underperformance of Elmo embedding might be due to the noise in the content of our job posting dataset. I would like to explore Elmo further in another text-only dataset.</p>
+                                </li>
+                            </ul>
+
+                        <p align="right"><a href="https://tommyjiang91.github.io/Portfolio_CV/" target="_top"><u>Back to Home</u></a></p>
+                    </div><!--//section-inner-->               
+                </section><!--//section-->
+
+            </div><!--//primary-->
+            <div class="secondary col-lg-4 col-12">
+                 <aside class="info aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Atlanta, US</li>
+                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="mailto:jjiang334@gatech.edu">jjiang334@gatech.edu</a></li>
+                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="https://tommyjiang91.github.io/Portfolio_CV/">https://tommyjiang91.github.io/Portfolio_CV/</a></li>
+                            </ul>
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//aside-->
+                
+                <aside class="skills aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Programming Skill</h2>
+                        <div class="content">                   
+                            <div class="skillset">
+                               
+                                <div class="item">
+                                    <h3 class="level-title">Python<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Pandas, Numpy, SKlearn, NLTK,"><i class="fas fa-info-circle"></i></span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="95%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">R<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Regression, Lasso, Stepwise Regression, etc."><i class="fas fa-info-circle"></i></span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="85%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">SQL</h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="80%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">Tableau</h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="80%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+
+                                 <div class="item">
+                                    <h3 class="level-title">D3.js</h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="40%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                
+                                <p><a class="more-link" href="https://github.com/TommyJiang91"><i class="fas fa-external-link-alt"></i>More on GitHub</a></p> 
+                            </div>              
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//section-->
+                
+                <aside class="education aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Education</h2>
+                        <div class="content">
+                            <div class="item">                      
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Master of Science in Analytics</h3>
+                                <h4 class="university">Gerogia Institution of Technology<span class="year"> (2019-2020)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Master of Science in Finance</h3>
+                                <h4 class="university">University of Illinois at Urbana-Champaign<span class="year"> (2015-2016)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Bachlor of Mathematics</h3>
+                                <h4 class="university">University of Waterloo<span class="year"> (2009-2014)</span></h4>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                           
+                <aside class="education aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Work Experience</h2>
+                        <div class="content">
+                            <div class="item">                      
+                                <h3 class="title"><i class="fas fa-briefcase"></i> Data Science Summer Intern</h3>
+                                <h4 class="university">Wells Fargo<span class="year"> (Summer 2020)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">                      
+                                <h3 class="title"><i class="fas fa-briefcase"></i> Forecast Team Supervisor</h3>
+                                <h4 class="university">Hisense USA<span class="year"> (October 2016-May 2019)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">                      
+                                <h3 class="title"><i class="fas fa-briefcase"></i> Sales Team Data Analyst</h3>
+                                <h4 class="university">Hisense USA<span class="year"> (October 2016-May 2019)</span></h4>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+
+                <aside class="list music aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Fields of Interest</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-database"></i><a> Data Science</a></li>
+                                <li><i class="fas fa-hand-holding-usd"></i><a>Finance</a></li>
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+
+                <aside class="list music aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Hobbies</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-hiking"></i><a> Camping</a></li>
+                                <li><i class="fas fa-book-reader"></i><a>Reading</a></li>
+                                <li><i class="fab fa-xbox"></i><a>Gaming</a></li>
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                
+                <aside class="list music aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Favourite Coding Music</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-headphones"></i> <a href="https://youtu.be/fuUFrAVGYe4" target="_blank">John Wick Edition</a></li>
+                                <li><i class="fas fa-headphones"></i> <a href="https://youtu.be/ZzRnX4UNJso" target="_blank">Biohazard Edition</a></li>
+                                <li><i class="fas fa-headphones"></i> <a href="https://youtu.be/TQ9ZNwi9N6Y" target="_blank">Encrypted AI</a></li>
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+            </div><!--//secondary-->    
+        </div><!--//row-->
+    </div><!--//masonry-->
+    
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+ 
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+    <!-- github calendar plugin -->
+    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>            
+</body>
+</html> 
+
